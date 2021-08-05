@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine</title>
+    <style>
+        #border{
+            border: black; 
+            border-width: 3px;
+            border-style: solid; 
+            border: radius 1px; 
+            width: 600px;
+            height: 350px;
+            margin: 200px auto; 
+            padding: 10px;
+        }
+
+        h1{ background-color:red; color: white; margin-top: 0%;}
+
+        .text{background:transparent; border: none;  border-bottom: 1px solid black; border-width: 3px; width: 250px;
+               text-align: center; font-family: Brush Script MT; font-weight:bold;  font-size: 20px ;margin-right: 30px; }
+
+        #address{width: 550px;}
+
+        .code{ width: 100px; margin-right: 70px; }
+
+        .citycode{
+            display: inline-block;
+            width: 173px;
+            text-align: left; 
+        }
+
+        .labelname{
+            display: inline-block;
+            width: 283px;
+            text-align: left; 
+        }
+    </style>
+   </head>
+<body>
+    <div id="border">
+        <h1 >Yes! I want to subscribe to Mag-O-Zine</h1>
+    <form>
+    
+        <input name="firstname" class="text" type="text" value="Joe">
+        <input name="secondname" class="text" type="text" value="Schmegeggie"><br>
+        <label for="firstname" class="labelname">First Name</label>
+        <label for="secondname" class="labelname">Last Name</label><br>
+
+        <input name="address" id="address" class="text" type="text" value="1001 washington Street"><br>
+        <label for="secondname">Address</label><br>
+
+        <input name="city" class="text code" type="text" value="Arcadia">
+        <input name="state" class="text code" type="text" value="LA">
+         <input name="zip" class="text code" type="text" value="99999"><br>
+        <label for="city" class="citycode">City</label>
+        <label for="state" class="citycode">State</label>
+        <label for="zip" class="citycode">Zip</label><br><br>
+
+        <div style="font-weight: bold;">
+        <label>Subscribe for: <input type="checkbox" class="salarytype"> 1 year($19.95)</label>
+        <label><input type="checkbox" class="salarytype"> 2 years($35.00)</label>
+
+        <p>Send me more information about:</p>
+        <label><input type="checkbox" name="info">Computer-Zine</label><br>
+        <label><input type="checkbox" name="info">Fishing-Zine</label><br>
+        <label ><input type="checkbox" name="info">Cat-O-Zine</label>
+        </div>
+     
+
+    </form>
+   
+    </div>
+</body>
+</html>
